@@ -1,0 +1,22 @@
+
+<section class="section-1">
+    <div class="container login-container">
+        <div class="row m-0">
+            <div class="col-10 col-md-8 col-lg-6 login-bar mx-auto">
+                <div class="row">
+                    <div class="col-10 mx-auto">
+                        {{!-- form   --}}
+                        <form action="/home" method="post">
+                            <input name="USER" type="text" class="form-control mt-3" placeholder="User name">
+                            <small class="form-text">{{userErr}}</small>
+                            <input name="PASS" type="password" class="form-control mt-3" placeholder="Password">
+                            <small class="form-text">{{passErr}}{{allErr}}</small><br>
+                            <button type="submit" class="btn btn-primary login-bar-button">Login</button>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../routes/index.js"></script>

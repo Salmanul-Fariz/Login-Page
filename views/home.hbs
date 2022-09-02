@@ -1,0 +1,26 @@
+<section class="home-sec">
+    <div class="row w-100">
+        <div class="col-md-12 d-flex justify-content-end">
+            <div class="col-3 d-flex justify-content-end p-4">
+                <a class="home-logout" href="/logout"><h5>log out</h5></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {{!-- card --}}
+            {{#each card}}
+            <div class="col-md-4 pt-5">
+                <div class="card w-100">
+                  <img class="card-img-top" src="{{this.img}}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h3 class="card-title home-card-text">{{this.device}}</h3>
+                        <p class="font-weight-light pb-3"><i><small>{{this.downloadDevice}}</small></i></p>
+                        <a href="#" class="btn btn-primary w-100"><p class="home-card-button">DOWNLOAD</p></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
